@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/quiz-guess-social-media-icon-in-flat-style-faq-illustration-on-isolated-background-help-button-sign-business-concept-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/first.css">
+    <link rel="stylesheet" href="./css/second.css">
+    <link rel="stylesheet" href="./css/third.css">
+    <title>Quiz Time</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+            <div class="first-content">
+                <h1 class="title"> Quiz Time ! </h1>
+                <p class="description"> Test your knowledge with these fun questions </p>
+                <button class="btn" onclick="handleStart()"> Start Quiz </button>
+            </div>
+
+            <div class="second-content">
+                <h1 class="question"></h1>
+                <div class="box-score-numbers">
+                    <span class="numbers"> Quiestion: 1 of 5 </span>
+                    <span class="score"></span>
+                </div>
+                <div class="box-answers">
+                </div>
+                <div class="line"></div>
+            </div>
+
+            <div class="third-content">
+                <h1 class="title"> Quiz Result </h1>
+                <div class="box-result">
+                    <span class="result-view"></span>
+                    <h2 class="title-result"> Good effort! <br> keep learning! </h2>    
+                </div>
+                <button class="btn" onclick="handleResult(false)"> Restart Quiz </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-version"> by Berrada Mehdi Version 0.0.1 </div>
+    <script src="script.js"></script>
+</body>
+</html>

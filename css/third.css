@@ -1,0 +1,61 @@
+@import url(./third.css);
+
+.third-content {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.third-content > .title {
+    text-align: center;
+    color: var(--text-main);
+    font-size: 40px;
+}
+
+.third-content > .box-result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: var(--text-main);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box-result > .result-view {
+    font-size: 20px;
+    color: var(--bg-main);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.box-result > .title-result {
+    font-size: 32px;
+    color: var(--bg-main);
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.third-content > .btn {
+    width: 30%;
+    margin-inline: auto;
+    padding: 10px 20px; 
+    font-size: 16px;
+    color: var(--text-main);
+    background-color: var(--error-color);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.third-content > .btn:hover {
+    background-color: var(--text-main);
+    color: var(--error-color);
+    transition: .5s ease-in-out;
+}

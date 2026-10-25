@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 1.2;
+}
+
+:root {
+  --bg-main: #0f172a;
+  --card-bg: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent-color: #6366f1;
+  --accent-hover: #4f46e5;
+  --option-bg: #334155;
+  --option-hover: #475569;
+  --success-color: #10b981;
+  --error-color: #ef4444;
+  --border-radius: 12px;
+  --box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container > .container-content {
+    background-color: var(--card-bg);
+    box-shadow: var(--box-shadow);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.container-content > .first-content {
+    width: 90%;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-content > .title {
+    font-size: 40px;
+    text-align: center;
+    color: var(--text-main);
+}
+
+.first-content > .description {
+    text-align: center;
+    font-size: 20px;
+    color: var(--text-main);
+}
+
+.first-content > .btn {
+    width: 30%;
+    margin-inline: auto;
+    padding: 10px 20px; 
+    font-size: 16px;
+    color: var(--text-main);
+    background-color: var(--error-color);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.first-content > .btn:hover {
+    background-color: var(--text-main);
+    color: var(--error-color);
+    transition: .5s ease-in-out;
+}
+
+.info-version {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: var(--text-muted);
+}
+
+@media (max-width:767px) {
+    .container-content > .first-content {
+        width: 100%;
+    }
+
+    .first-content > .title {
+        font-size: 30px;
+    }
+
+    .first-content > .description {
+        text-align: center;
+        font-size: 16px;
+        color: var(--text-main);
+    }
+
+    .first-content > .btn {
+        width: 60%;
+    }
+
+    .info-version {
+        font-size: 14px;
+    }
+}

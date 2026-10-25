@@ -1,0 +1,75 @@
+@import url(./first.css);
+
+.second-content {
+    width: 90%;
+    height: 100%;
+    margin-inline: auto;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.second-content > .question {
+    font-size: 30px;
+    color: var(--text-main);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.second-content > .box-score-numbers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-score-numbers > .numbers , .box-score-numbers > .score {
+    color: var(--text-main);
+    font-size: 18px;
+}
+
+.second-content > .box-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box-answers > .answer {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--option-bg);
+    border-radius: 10px;
+    color: var(--text-main);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box-answers > .answer:hover {
+    background-color: var(--option-hover);
+    transition: .5s;
+}
+
+.second-content > .line {
+    display: none;
+    grid-template-rows: repeat(1,1fr);
+    padding: 5px;
+    border: 2px solid var(--text-main);
+    border-radius: 10px;
+}
+
+@media (max-width:767px) {
+    .second-content {
+        width: 100%;
+    }
+    .second-content > .question {
+        font-size: 20px;
+    }
+
+    .box-score-numbers > .numbers , .box-score-numbers > .score {
+        font-size: 15px;
+    }
+
+    .box-answers > .answer {
+        font-size: 14px;
+    }
+}
