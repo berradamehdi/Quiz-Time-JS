@@ -40,4 +40,4 @@ A modern web browser (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari).
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/Quiz-Time.git](https://github.com/your-username/Quiz-Time.git)
+   git clone [https://github.com/berradamehdi/Quiz-App-JS.git](https://github.com/berradamehdi/Quiz-App-JS.git)
