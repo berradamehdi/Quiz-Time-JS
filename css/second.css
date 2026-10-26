@@ -50,11 +50,22 @@
 }
 
 .second-content > .line {
-    display: none;
+    display: grid;
     grid-template-rows: repeat(1,1fr);
-    padding: 5px;
     border: 2px solid var(--text-main);
     border-radius: 10px;
+}
+
+.line > .box {
+    padding: 5px;
+}
+
+.line > .box:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.line > .box:last-child {
+    border-radius: 0 10px 10px 0;
 }
 
 @media (max-width:767px) {
